@@ -94,19 +94,19 @@ export default function Register({ onSwitchToLogin }: RegisterProps) {
 
           {/* Right Column - Register Form */}
           <div className="flex flex-col justify-center bg-black">
-            <div className="py-8 px-4 sm:px-10">
-              <div className="text-center mb-8">
+            <div className="p-0">
+              <div className="text-center mb-8 px-4">
                 <h2 className="text-3xl font-extrabold text-white">
                   Create your account
                 </h2>
-                <p className="mt-2 text-sm text-gray-300">
+                <p className="mt-2 text-sm text-white">
                   Join the assessment management system
                 </p>
               </div>
               
-              <form className="space-y-6" onSubmit={handleSubmit}>
+              <form className="space-y-6 px-4" onSubmit={handleSubmit}>
           {error && (
-            <div className="bg-red-50 border border-red-200 text-red-700 px-4 py-3">
+            <div className="bg-red-900 border border-red-700 text-red-200 px-4 py-3">
               {error}
             </div>
           )}
@@ -157,7 +157,7 @@ export default function Register({ onSwitchToLogin }: RegisterProps) {
                 required
                 value={formData.username}
                 onChange={handleChange}
-                className="mt-1 appearance-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm"
+                  className="mt-1 appearance-none relative block w-full px-3 py-2 border border-gray-600 bg-gray-800 text-white placeholder-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm"
                 placeholder="Choose a username"
               />
             </div>
@@ -173,7 +173,7 @@ export default function Register({ onSwitchToLogin }: RegisterProps) {
                 required
                 value={formData.email}
                 onChange={handleChange}
-                className="mt-1 appearance-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm"
+                  className="mt-1 appearance-none relative block w-full px-3 py-2 border border-gray-600 bg-gray-800 text-white placeholder-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm"
                 placeholder="Enter your email"
               />
             </div>
@@ -224,7 +224,7 @@ export default function Register({ onSwitchToLogin }: RegisterProps) {
                 type="text"
                 value={formData.department}
                 onChange={handleChange}
-                className="mt-1 appearance-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm"
+                  className="mt-1 appearance-none relative block w-full px-3 py-2 border border-gray-600 bg-gray-800 text-white placeholder-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm"
                 placeholder="Enter department"
               />
             </div>
@@ -240,7 +240,7 @@ export default function Register({ onSwitchToLogin }: RegisterProps) {
                 required
                 value={formData.password}
                 onChange={handleChange}
-                className="mt-1 appearance-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm"
+                  className="mt-1 appearance-none relative block w-full px-3 py-2 border border-gray-600 bg-gray-800 text-white placeholder-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm"
                 placeholder="Create a password"
               />
             </div>
@@ -256,7 +256,7 @@ export default function Register({ onSwitchToLogin }: RegisterProps) {
                 required
                 value={formData.confirmPassword}
                 onChange={handleChange}
-                className="mt-1 appearance-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-md focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm"
+                  className="mt-1 appearance-none relative block w-full px-3 py-2 border border-gray-600 bg-gray-800 text-white placeholder-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm"
                 placeholder="Confirm your password"
               />
             </div>
@@ -272,7 +272,7 @@ export default function Register({ onSwitchToLogin }: RegisterProps) {
             </button>
           </div>
 
-              <div className="text-center">
+              <div className="text-center px-4">
                 <button
                   type="button"
                   onClick={onSwitchToLogin}
