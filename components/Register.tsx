@@ -96,10 +96,10 @@ export default function Register({ onSwitchToLogin }: RegisterProps) {
           <div className="flex flex-col justify-center bg-black">
             <div className="p-0">
               <div className="text-center mb-8 px-4">
-                <h2 className="text-3xl font-extrabold text-white">
+                <h2 className="text-3xl font-extrabold text-white !text-white" style={{color: 'white'}}>
                   Create your account
                 </h2>
-                <p className="mt-2 text-sm text-white">
+                <p className="mt-2 text-sm text-white !text-white" style={{color: 'white'}}>
                   Join the assessment management system
                 </p>
               </div>
@@ -114,7 +114,7 @@ export default function Register({ onSwitchToLogin }: RegisterProps) {
           <div className="space-y-4">
             <div className="grid grid-cols-2 gap-4">
               <div>
-                <label htmlFor="firstName" className="block text-sm font-medium text-white">
+                <label htmlFor="firstName" className="block text-sm font-medium text-white !text-white" style={{color: 'white'}}>
                   First Name
                 </label>
                 <input
@@ -130,7 +130,7 @@ export default function Register({ onSwitchToLogin }: RegisterProps) {
               </div>
               
               <div>
-                <label htmlFor="lastName" className="block text-sm font-medium text-white">
+                <label htmlFor="lastName" className="block text-sm font-medium text-white !text-white" style={{color: 'white'}}>
                   Last Name
                 </label>
                 <input
@@ -147,7 +147,7 @@ export default function Register({ onSwitchToLogin }: RegisterProps) {
             </div>
 
             <div>
-              <label htmlFor="username" className="block text-sm font-medium text-white">
+              <label htmlFor="username" className="block text-sm font-medium text-white !text-white" style={{color: 'white'}}>
                 Username
               </label>
               <input
@@ -157,13 +157,13 @@ export default function Register({ onSwitchToLogin }: RegisterProps) {
                 required
                 value={formData.username}
                 onChange={handleChange}
-                  className="mt-1 appearance-none relative block w-full px-3 py-2 border border-gray-600 bg-gray-800 text-white placeholder-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm"
+                  className="mt-1 appearance-none relative block w-full px-3 py-2 border border-gray-600 bg-gray-800 text-white !text-white placeholder-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm"
                 placeholder="Choose a username"
               />
             </div>
 
             <div>
-              <label htmlFor="email" className="block text-sm font-medium text-white">
+              <label htmlFor="email" className="block text-sm font-medium text-white !text-white" style={{color: 'white'}}>
                 Email
               </label>
               <input
@@ -173,13 +173,13 @@ export default function Register({ onSwitchToLogin }: RegisterProps) {
                 required
                 value={formData.email}
                 onChange={handleChange}
-                  className="mt-1 appearance-none relative block w-full px-3 py-2 border border-gray-600 bg-gray-800 text-white placeholder-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm"
+                  className="mt-1 appearance-none relative block w-full px-3 py-2 border border-gray-600 bg-gray-800 text-white !text-white placeholder-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm"
                 placeholder="Enter your email"
               />
             </div>
 
             <div>
-              <label htmlFor="role" className="block text-sm font-medium text-white">
+              <label htmlFor="role" className="block text-sm font-medium text-white !text-white" style={{color: 'white'}}>
                 Role
               </label>
               <select
@@ -188,7 +188,7 @@ export default function Register({ onSwitchToLogin }: RegisterProps) {
                 required
                 value={formData.role}
                 onChange={handleChange}
-                className="mt-1 block w-full px-3 py-2 border border-gray-600 bg-gray-800 text-white focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                className="mt-1 block w-full px-3 py-2 border border-gray-600 bg-gray-800 text-white !text-white focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
               >
                 <option value="student">Student</option>
                 <option value="faculty">Faculty</option>
@@ -199,7 +199,7 @@ export default function Register({ onSwitchToLogin }: RegisterProps) {
 
             {formData.role === 'student' && (
               <div>
-                <label htmlFor="rollNumber" className="block text-sm font-medium text-white">
+                <label htmlFor="rollNumber" className="block text-sm font-medium text-white !text-white" style={{color: 'white'}}>
                   Roll Number
                 </label>
                 <input
@@ -215,7 +215,7 @@ export default function Register({ onSwitchToLogin }: RegisterProps) {
             )}
 
             <div>
-              <label htmlFor="department" className="block text-sm font-medium text-white">
+              <label htmlFor="department" className="block text-sm font-medium text-white !text-white" style={{color: 'white'}}>
                 Department (Optional)
               </label>
               <input
@@ -224,13 +224,13 @@ export default function Register({ onSwitchToLogin }: RegisterProps) {
                 type="text"
                 value={formData.department}
                 onChange={handleChange}
-                  className="mt-1 appearance-none relative block w-full px-3 py-2 border border-gray-600 bg-gray-800 text-white placeholder-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm"
+                  className="mt-1 appearance-none relative block w-full px-3 py-2 border border-gray-600 bg-gray-800 text-white !text-white placeholder-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm"
                 placeholder="Enter department"
               />
             </div>
 
             <div>
-              <label htmlFor="password" className="block text-sm font-medium text-white">
+              <label htmlFor="password" className="block text-sm font-medium text-white !text-white" style={{color: 'white'}}>
                 Password
               </label>
               <input
@@ -240,13 +240,13 @@ export default function Register({ onSwitchToLogin }: RegisterProps) {
                 required
                 value={formData.password}
                 onChange={handleChange}
-                  className="mt-1 appearance-none relative block w-full px-3 py-2 border border-gray-600 bg-gray-800 text-white placeholder-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm"
+                  className="mt-1 appearance-none relative block w-full px-3 py-2 border border-gray-600 bg-gray-800 text-white !text-white placeholder-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm"
                 placeholder="Create a password"
               />
             </div>
 
             <div>
-              <label htmlFor="confirmPassword" className="block text-sm font-medium text-white">
+              <label htmlFor="confirmPassword" className="block text-sm font-medium text-white !text-white" style={{color: 'white'}}>
                 Confirm Password
               </label>
               <input
@@ -256,7 +256,7 @@ export default function Register({ onSwitchToLogin }: RegisterProps) {
                 required
                 value={formData.confirmPassword}
                 onChange={handleChange}
-                  className="mt-1 appearance-none relative block w-full px-3 py-2 border border-gray-600 bg-gray-800 text-white placeholder-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm"
+                  className="mt-1 appearance-none relative block w-full px-3 py-2 border border-gray-600 bg-gray-800 text-white !text-white placeholder-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm"
                 placeholder="Confirm your password"
               />
             </div>

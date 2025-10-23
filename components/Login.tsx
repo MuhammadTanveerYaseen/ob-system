@@ -67,13 +67,13 @@ export default function Login({ onSwitchToRegister }: LoginProps) {
           <div className="flex flex-col justify-center bg-black">
             <div className="p-0">
               <div className="text-center mb-8 px-4">
-                <h2 className="text-3xl font-extrabold text-white">
+                <h2 className="text-3xl font-extrabold text-white !text-white" style={{color: 'white'}}>
                   Sign in to your account
                 </h2>
-                <p className="mt-2 text-sm text-white">
+                <p className="mt-2 text-sm text-white !text-white" style={{color: 'white'}}>
                   University of Southern Punjab
                 </p>
-                <p className="mt-1 text-sm text-white">
+                <p className="mt-1 text-sm text-white !text-white" style={{color: 'white'}}>
                   Assessment Management System
                 </p>
               </div>
@@ -85,7 +85,7 @@ export default function Login({ onSwitchToRegister }: LoginProps) {
             )}
 
             <div>
-              <label htmlFor="username" className="block text-sm font-medium text-white">
+              <label htmlFor="username" className="block text-sm font-medium text-white !text-white" style={{color: 'white'}}>
                 Username
               </label>
               <div className="mt-1">
@@ -97,14 +97,14 @@ export default function Login({ onSwitchToRegister }: LoginProps) {
                   required
                   value={formData.username}
                   onChange={handleChange}
-                  className="appearance-none block w-full px-3 py-2 border border-gray-600 bg-gray-800 text-white placeholder-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                  className="appearance-none block w-full px-3 py-2 border border-gray-600 bg-gray-800 text-white !text-white placeholder-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                   placeholder="Enter your username"
                 />
               </div>
             </div>
 
             <div>
-              <label htmlFor="password" className="block text-sm font-medium text-white">
+              <label htmlFor="password" className="block text-sm font-medium text-white !text-white" style={{color: 'white'}}>
                 Password
               </label>
               <div className="mt-1">
@@ -116,7 +116,7 @@ export default function Login({ onSwitchToRegister }: LoginProps) {
                   required
                   value={formData.password}
                   onChange={handleChange}
-                  className="appearance-none block w-full px-3 py-2 border border-gray-600 bg-gray-800 text-white placeholder-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                  className="appearance-none block w-full px-3 py-2 border border-gray-600 bg-gray-800 text-white !text-white placeholder-gray-300 focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                   placeholder="Enter your password"
                 />
               </div>
@@ -139,7 +139,7 @@ export default function Login({ onSwitchToRegister }: LoginProps) {
                     <div className="w-full border-t border-gray-600" />
                   </div>
                   <div className="relative flex justify-center text-sm">
-                    <span className="px-2 bg-black text-white">Don&apos;t have an account?</span>
+                    <span className="px-2 bg-black text-white !text-white">Don&apos;t have an account?</span>
                   </div>
                 </div>
 
